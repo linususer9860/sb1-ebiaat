@@ -1,0 +1,117 @@
+---
+// src/pages/blog/modern-nepali-architecture.astro
+import Layout from '../layouts/Layout.astro';
+
+const title = "Modern Nepali Architecture: Blending Tradition with Innovation";
+const description = "Discover how contemporary Nepali house designs are incorporating traditional elements while embracing modern architectural innovations for sustainable living.";
+const date = "2024-04-15";
+---
+
+<Layout title={title} description={description}>
+  <article class="blog-post">
+    <header>
+      <p class="date">{new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })}</p>
+      <h1>{title}</h1>
+    </header>
+
+    <img 
+      src="https://arcmaxarchitect.com/sites/default/files/styles/banner_image_1024x585/public/weekend_home_and_row_house_design.jpg?itok=8AJKyNxB"
+      alt="Modern Nepali House Design"
+      class="hero-image"
+    />
+
+    <div class="content">
+      <p class="lead">The evolution of <a href="https://housedesigninnepal.com/">house design in Nepal</a> represents a perfect harmony between cultural heritage and modern innovation. Today's architects are creating homes that honor traditional aesthetics while incorporating contemporary features for comfortable living.</p>
+
+      <h2>Key Features of Modern Nepali Architecture</h2>
+      <ul>
+        <li>Open floor plans that promote family interaction</li>
+        <li>Large windows maximizing natural light and ventilation</li>
+        <li>Integration of traditional courtyards (Chowk)</li>
+        <li>Modern interpretations of Aaley Jhyal (traditional windows)</li>
+        <li>Sustainable building materials and methods</li>
+      </ul>
+
+      <img 
+        src="https://www.homelane.com/blog/wp-content/uploads/2022/11/box-house-design.jpg"
+        alt="Modern Nepali Architectural Features"
+      />
+
+      <h2>Sustainable Design Elements</h2>
+      <p>Modern <a href="https://housedesigninnepal.com/">Nepali house designs</a> increasingly incorporate sustainable features:</p>
+      <ul>
+        <li>Solar panels for energy efficiency</li>
+        <li>Rainwater harvesting systems</li>
+        <li>Natural cooling and ventilation</li>
+        <li>Local, eco-friendly building materials</li>
+      </ul>
+
+      <h2>Space Optimization</h2>
+      <p>Contemporary designs focus on maximizing available space through:</p>
+      <ul>
+        <li>Multi-functional rooms</li>
+        <li>Built-in storage solutions</li>
+        <li>Vertical space utilization</li>
+        <li>Modular furniture integration</li>
+      </ul>
+    </div>
+  </article>
+</Layout>
+<style>
+  .blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .date {
+    color: #666;
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 1rem 0 2rem;
+  }
+  .hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  .content {
+    line-height: 1.6;
+    color: #333;
+  }
+  .lead {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 2rem 0 1rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Earthquake-Resistant Homes: Building Safer Structures in Nepal";
+const description = "Learn about essential design and structural elements that make homes in Nepal resilient to earthquakes, ensuring safety and peace of mind for homeowners.";
+const date = "2024-04-01";
+---
+
+<Layout title={title} description={description}>
+  <article class="blog-post">
+    <header>
+      <p class="date">{new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })}</p>
+      <h1>{title}</h1>
+    </header>
+
+    <img 
+      src="https://arcmaxarchitect.com/sites/default/files/styles/banner_image_1024x585/public/weekend_home_and_row_house_design.jpg?itok=8AJKyNxB"
+      alt="Earthquake-Resistant House Design"
+      class="hero-image"
+    />
+
+    <div class="content">
+      <p class="lead">Nepal is located in a seismically active region, making earthquake-resistant homes essential for safety. By using specific design strategies, homeowners can ensure resilience in their structures.</p>
+
+      <h2>Key Earthquake-Resistant Features</h2>
+      <ul>
+        <li>Flexible foundations to absorb seismic shock</li>
+        <li>Reinforced concrete frames</li>
+        <li>Cross-bracing for stability</li>
+        <li>Use of lightweight construction materials</li>
+      </ul>
+
+      <h2>Smart Construction Techniques</h2>
+      <p>These building techniques can enhance a home’s resistance to earthquakes:</p>
+      <ul>
+        <li>Base isolation systems</li>
+        <li>Proper wall connections</li>
+        <li>Roof and wall reinforcements</li>
+        <li>Regular structural inspections</li>
+      </ul>
+
+      <h2>Building Codes and Regulations</h2>
+      <p>Following Nepal's building codes helps ensure earthquake resilience:</p>
+      <ul>
+        <li>Compliance with National Building Code (NBC)</li>
+        <li>Using certified materials and practices</li>
+        <li>Involving structural engineers for safety assurance</li>
+        <li>Regular audits for structural integrity</li>
+      </ul>
+    </div>
+  </article>
+</Layout>
+<style>
+  .blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .date {
+    color: #666;
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 1rem 0 2rem;
+  }
+  .hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  .content {
+    line-height: 1.6;
+    color: #333;
+  }
+  .lead {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 2rem 0 1rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>

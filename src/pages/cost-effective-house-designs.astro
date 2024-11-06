@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Cost-Effective House Designs: Affordable and Efficient Living in Nepal";
+const description = "Explore practical and budget-friendly house design ideas tailored for Nepali families. Discover techniques and materials that reduce costs while enhancing comfort and durability.";
+const date = "2024-03-15";
+---
+
+<Layout title={title} description={description}>
+  <article class="blog-post">
+    <header>
+      <p class="date">{new Date(date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })}</p>
+      <h1>{title}</h1>
+    </header>
+
+    <img 
+      src="https://www.karmod.eu/media/blog/270/prefab-container-homes-ghana_8.jpg"
+      alt="Cost-Effective Nepali House Design"
+      class="hero-image"
+    />
+
+    <div class="content">
+      <p class="lead">Designing an affordable home in Nepal doesn’t mean compromising on quality or style. With smart planning and efficient materials, Nepali homeowners can enjoy comfortable living at a reasonable price.</p>
+
+      <h2>Budget-Friendly Building Materials</h2>
+      <ul>
+        <li>Locally sourced stone and wood</li>
+        <li>Eco-friendly bricks</li>
+        <li>Recycled or upcycled materials</li>
+        <li>Bamboo for roofing and interior decor</li>
+      </ul>
+
+      <h2>Energy-Efficient Features</h2>
+      <p>Incorporating energy-efficient elements helps reduce long-term costs:</p>
+      <ul>
+        <li>Passive solar design to minimize heating costs</li>
+        <li>Natural ventilation systems</li>
+        <li>Low-energy lighting and appliances</li>
+        <li>Water-saving fixtures</li>
+      </ul>
+
+      <h2>Optimizing Small Spaces</h2>
+      <p>For those on a budget, maximizing smaller spaces is crucial:</p>
+      <ul>
+        <li>Open-plan layouts to make small rooms feel larger</li>
+        <li>Multi-purpose furniture</li>
+        <li>Ample storage solutions</li>
+        <li>Natural light to enhance the sense of space</li>
+      </ul>
+    </div>
+  </article>
+</Layout>
+<style>
+  .blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .date {
+    color: #666;
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 1rem 0 2rem;
+  }
+  .hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  .content {
+    line-height: 1.6;
+    color: #333;
+  }
+  .lead {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 2rem 0 1rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
