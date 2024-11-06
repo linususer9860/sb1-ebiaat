@@ -1,0 +1,53 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		<!-- SEO Meta Tags -->
+		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="house design in nepal, modern house design in nepal, 4 room house design in nepal, nepali architecture, house construction nepal" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: #3498db;
+		--accent-dark: #2c3e50;
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #f8f9fa;
+		scroll-behavior: smooth;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		min-height: 100vh;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>

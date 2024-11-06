@@ -1,0 +1,229 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Traditional Meets Modern: Contemporary House Design in Nepal";
+const description = "Discover how Nepal's architecture is evolving with modern house designs that blend traditional aesthetics with contemporary functionality. Explore innovative layouts, sustainable features, and cultural elements.";
+---
+
+<Layout title={title} description={description}>
+	<main>
+		<article>
+			<div class="hero">
+				<img src="/api/placeholder/1200/600" alt="Modern Nepali House Design" class="hero-image" />
+				<h1>Traditional Meets Modern: Contemporary House Design in Nepal</h1>
+			</div>
+			
+			<div class="content">
+				<section class="intro">
+					<p class="lead">Nepal's architectural landscape is experiencing a remarkable transformation, where centuries-old building traditions merge seamlessly with modern design principles. Today's Nepali homes reflect this unique fusion, creating spaces that honor cultural heritage while embracing contemporary living standards.</p>
+				</section>
+
+				<section class="traditional-elements">
+					<h2>Traditional Elements in Modern Design</h2>
+					<div class="image-text-grid">
+						<div class="text-content">
+							<p>Modern Nepali architecture preserves key traditional elements:</p>
+							<ul>
+								<li>Carved wooden windows (Aaley Jhyal)</li>
+								<li>Brick facades with intricate patterns</li>
+								<li>Courtyard-centered layouts (Chowk)</li>
+								<li>Sloped roofs with traditional tiles</li>
+							</ul>
+							<p>These elements are reimagined with contemporary materials and techniques while maintaining their cultural significance.</p>
+						</div>
+						<img src="/api/placeholder/500/300" alt="Traditional Nepali Architectural Elements" />
+					</div>
+				</section>
+
+				<section class="modern-innovations">
+					<h2>Contemporary Architectural Features</h2>
+					<div class="feature-grid">
+						<div class="feature-card">
+							<img src="/api/placeholder/300/200" alt="Open Floor Plan" />
+							<h3>Open Floor Plans</h3>
+							<p>Modern Nepali homes embrace spacious, multi-functional living areas that promote family interaction and flexibility.</p>
+						</div>
+						<div class="feature-card">
+							<img src="/api/placeholder/300/200" alt="Sustainable Features" />
+							<h3>Sustainable Design</h3>
+							<p>Integration of solar panels, rainwater harvesting, and natural ventilation systems for eco-friendly living.</p>
+						</div>
+						<div class="feature-card">
+							<img src="/api/placeholder/300/200" alt="Smart Home Features" />
+							<h3>Smart Home Technology</h3>
+							<p>Modern automation systems for lighting, security, and climate control enhance comfort and efficiency.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="earthquake-resistant">
+					<h2>Earthquake-Resistant Construction</h2>
+					<div class="image-text-grid">
+						<img src="/api/placeholder/500/300" alt="Earthquake Resistant Structure" />
+						<div class="text-content">
+							<p>Following the 2015 earthquake, modern house design in Nepal prioritizes:</p>
+							<ul>
+								<li>Reinforced concrete frameworks</li>
+								<li>Seismic-resistant foundations</li>
+								<li>Flexible structural systems</li>
+								<li>Quality construction materials</li>
+							</ul>
+							<p>Learn more about earthquake-resistant designs at <a href="https://housedesigninnepal.com/" target="_blank" rel="noopener">House Design Nepal</a>.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="design-trends">
+					<h2>Current Design Trends</h2>
+					<div class="trends-container">
+						<div class="trend">
+							<h3>Indoor-Outdoor Living</h3>
+							<img src="https://i.pinimg.com/736x/f0/e0/1c/f0e01ceff513a76372b29aad30f88b13.jpg" alt="Indoor-Outdoor Space" />
+							<p>Large windows and sliding doors create seamless connections with nature, incorporating traditional courtyard concepts into modern living spaces.</p>
+						</div>
+						<div class="trend">
+							<h3>Rooftop Gardens</h3>
+							<img src="/api/placeholder/400/250" alt="Rooftop Garden" />
+							<p>Green roofs provide additional living space while improving insulation and creating sustainable urban environments.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="conclusion">
+					<h2>Embracing the Future While Honoring the Past</h2>
+					<p>Nepal's contemporary house designs demonstrate how traditional architecture can evolve to meet modern needs while preserving cultural identity. For professional design services and more inspiration, visit <a href="https://housedesigninnepal.com/" target="_blank" rel="noopener">our design portfolio</a>.</p>
+				</section>
+			</div>
+		</article>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 2rem;
+		width: 1200px;
+		max-width: calc(100% - 2rem);
+		color: #333;
+	}
+	
+	article {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.hero {
+		position: relative;
+		margin-bottom: 3rem;
+	}
+
+	.hero-image {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		color: #2c3e50;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+	h2 {
+		color: #3498db;
+		margin-top: 2rem;
+		font-size: 1.8rem;
+	}
+
+	h3 {
+		color: #2c3e50;
+		margin: 1rem 0;
+		font-size: 1.4rem;
+	}
+
+	.lead {
+		font-size: 1.2rem;
+		line-height: 1.8;
+		color: #666;
+		margin-bottom: 2rem;
+	}
+
+	.content {
+		font-size: 1.1rem;
+		line-height: 1.6;
+	}
+
+	.image-text-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		align-items: center;
+		margin: 2rem 0;
+	}
+
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin: 2rem 0;
+	}
+
+	.feature-card {
+		background: #f8f9fa;
+		padding: 1rem;
+		border-radius: 8px;
+		text-align: center;
+	}
+
+	.feature-card img {
+		width: 100%;
+		height: auto;
+		border-radius: 4px;
+	}
+
+	.trends-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		margin: 2rem 0;
+	}
+
+	.trend img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+		margin: 1rem 0;
+	}
+
+	ul {
+		margin-left: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	a {
+		color: #3498db;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	@media (max-width: 768px) {
+		.image-text-grid,
+		.trends-container {
+			grid-template-columns: 1fr;
+		}
+
+		.feature-grid {
+			grid-template-columns: 1fr;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+	}
+</style>

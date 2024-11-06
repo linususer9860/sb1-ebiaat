@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BlogCard from '../components/BlogCard.astro';
+
+const title = "House Design Guide in Nepal | Expert Tips & Modern Designs";
+const description = "Comprehensive guide for house design in Nepal. Learn about modern house designs, 4-room layouts, and essential building tips for Nepali homes.";
+---
+
+<Layout title={title} description={description}>
+	<main>
+		<h1>Complete Guide to <span class="text-gradient">House Design in Nepal</span></h1>
+		<p class="intro">
+			Expert insights on modern house design in Nepal, featuring practical tips and local architectural expertise.
+		</p>
+		
+		<div class="blog-grid">
+			<BlogCard
+				href="/essential-tips-building-house-nepal"
+				title="Essential Tips for Building a House in Nepal"
+				description="Key factors to consider when building your dream home in Nepal, from foundation to finishing."
+				date="2024-01-15"
+			/>
+			<BlogCard
+				href="/modern-house-design-nepal"
+				title="Modern House Design Trends in Nepal"
+				description="Contemporary architectural trends shaping modern house design in Nepal's urban landscape."
+				date="2024-01-16"
+			/>
+			<BlogCard
+				href="/four-room-house-design-nepal"
+				title="4 Room House Design Guide for Nepal"
+				description="Practical layouts and design ideas for comfortable 4-room houses suited to Nepali families."
+				date="2024-01-17"
+			/>
+			<BlogCard
+				href="/house-design-in-nepal"
+				title="Looking for House Design In Nepal?"
+				description="Best house designs in nepal created by ai"
+				date="2024-01-27"
+			/>
+		</div>
+
+		<section class="resources">
+			<h2>Additional Resources</h2>
+			<p>For more detailed house designs and professional consultation, visit our partner: 
+				<a href="https://housedesigninnepal.com/" target="_blank" rel="noopener">house design in Nepal</a>
+			</p>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 2rem;
+		width: 1200px;
+		max-width: calc(100% - 2rem);
+		color: #333;
+		font-size: 18px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: center;
+		margin-bottom: 1em;
+		color: #2c3e50;
+	}
+	.text-gradient {
+		background: linear-gradient(45deg, #3498db, #2c3e50);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.intro {
+		font-size: 1.2rem;
+		text-align: center;
+		margin-bottom: 3rem;
+		color: #666;
+	}
+	.blog-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+	.resources {
+		background: #f8f9fa;
+		padding: 2rem;
+		border-radius: 8px;
+		margin-top: 3rem;
+	}
+	.resources h2 {
+		color: #2c3e50;
+		margin-bottom: 1rem;
+	}
+	.resources a {
+		color: #3498db;
+		text-decoration: none;
+		font-weight: 500;
+	}
+	.resources a:hover {
+		text-decoration: underline;
+	}
+</style>
