@@ -1,4 +1,6 @@
 ---
+import Header from '../components/Header.astro';
+
 interface Props {
 	title: string;
 	description: string;
@@ -29,6 +31,7 @@ const { title, description } = Astro.props;
 		<meta name="google-site-verification" content="nc9pd5BCRE_U71RpjQWKWGEJouOIjL4445QtUXLOO5o" />
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
